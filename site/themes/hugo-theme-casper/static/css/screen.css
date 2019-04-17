@@ -485,7 +485,10 @@ margin on the iframe, cause it breaks stuff. */
     position: relative;
     z-index: 10;
     min-height: 100%;
+    /* kleist
     background: #fff;
+    */
+    background: #eee;
     -webkit-transition: -webkit-transform 0.5s ease;
             transition: transform 0.5s ease;
 }
@@ -519,6 +522,8 @@ body.nav-opened .site-wrapper {
 
 .main-header .inner {
     width: 80%;
+    /* kleist */
+    margin-top: 60vh;
 }
 
 .main-header a.bloglogo {
@@ -644,7 +649,7 @@ body.nav-opened .nav {
     list-style: none;
     counter-reset: item;
 }
-
+/* kleist
 .nav li:before {
     display: block;
     float: right;
@@ -657,6 +662,7 @@ body.nav-opened .nav {
     content: counter(item, lower-roman);
     counter-increment: item;
 }
+*/
 .nav li {
     margin: 0;
 }
@@ -670,12 +676,14 @@ body.nav-opened .nav {
     white-space: nowrap;
     text-overflow: ellipsis;
 }
+/* kleist
 .nav li a:after {
     display: inline-block;
     content: " .......................................................";
     color: rgba(255,255,255,0.2);
     margin-left: 5px;
 }
+*/
 .nav .nav-current:before {
     color: #fff;
 }
@@ -873,7 +881,7 @@ body.nav-opened .menu-button .word {
 /* The details of your blog. Defined in ghost/settings/ */
 .page-title {
     margin: 10px 0 10px 0;
-    font-size: 5rem;
+    font-size: 10rem;
     letter-spacing: -1px;
     font-weight: 700;
     font-family: "Open Sans", sans-serif;
@@ -882,7 +890,7 @@ body.nav-opened .menu-button .word {
 
 .page-description {
     margin: 0;
-    font-size: 2rem;
+    font-size: 4rem;
     line-height: 1.5em;
     font-weight: 400;
     font-family: "Merriweather", serif;
@@ -940,6 +948,7 @@ body.nav-opened .menu-button .word {
 
 /* Add a little circle in the middle of the border-bottom on our .post
    just for the lolz and stylepoints. */
+/* kleist
 .post:after {
     display: block;
     content: "";
@@ -954,7 +963,7 @@ body.nav-opened .menu-button .word {
     border-radius: 100%;
     box-shadow: #FFF 0 0 0 5px;
 }
-
+*/
 body:not(.post-template) .post-title {
     font-size: 3.6rem;
 }
@@ -1352,7 +1361,6 @@ body:not(.post-template) .post-title {
     margin: 4rem auto;
     font-family: "Open Sans", sans-serif;
     font-size: 1.3rem;
-    color: #9EABB3;
     text-align: center;
 }
 

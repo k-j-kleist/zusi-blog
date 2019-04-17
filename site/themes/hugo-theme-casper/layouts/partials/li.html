@@ -7,6 +7,7 @@
         <p>{{ .Summary }} <a class="read-more" href="{{.RelPermalink}}">&raquo;</a></p>
     </section>
     <footer class="post-meta">
+        {{/*
         {{$author:= .Site.Params.author}}
         {{if .Params.author }}
             {{$author:= .Params.author}}
@@ -25,6 +26,7 @@
         {{else if .Site.Params.author}}
             {{.Site.Params.author}}
         {{end}}
+        */}}
         {{if .Params.tags }}on
             {{ range $index, $tag := .Params.tags }}
                 <a href="{{$baseurl}}tags/{{ $tag | urlize }}/">#{{ $tag }}</a>,
