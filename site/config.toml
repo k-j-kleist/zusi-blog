@@ -52,5 +52,10 @@ URL = "/om"
 
 [[menu.main]]
 Weight = 30
+Name = "Problem?"
+URL = "/problem"
+
+[[menu.main]]
+Weight = 40
 Name = "Kontakt"
 URL = "/kontakt"

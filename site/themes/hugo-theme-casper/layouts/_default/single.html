@@ -13,14 +13,14 @@
   <nav class="main-nav clearfix">
 {{end}}
 
-  {{ if .Site.Params.logo }}
+{{ if .Site.Params.logo }}
       <a class="blog-logo" href="{{.Site.BaseURL}}"><img src="{{.Site.BaseURL}}{{ .Site.Params.logo }}" alt="Home" /></a>
   {{end}}
   {{ if .Site.Menus.main }}
       <a class="menu-button" href="#"><span class="burger">&#9776;</span><span class="word">Meny</span></a>
   {{else}}
       <a class="menu-button icon-feed" href="{{ .Site.BaseURL }}index.xml">&nbsp;&nbsp;Subscribe</a>
-  {{end}}
+{{end}}
   </nav>
 </header>
 
@@ -66,6 +66,5 @@
   </footer>
   */}}
 </article>
-
 </main>
 {{ partial "footer.html" . }}
