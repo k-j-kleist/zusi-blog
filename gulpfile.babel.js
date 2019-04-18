@@ -43,8 +43,10 @@ gulp.task("server", ["hugo", "css", "js"], () => {
   browserSync.init({
     server: {
       baseDir: "./dist"
-    }
+    },
+    browser: "chrome",
   });
+
   gulp.watch("./src/js/**/*.js", ["js"]);
   gulp.watch("./src/css/**/*.css", ["css"]);
   gulp.watch("./site/**/*", ["hugo"]);
