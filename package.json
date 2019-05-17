@@ -4,7 +4,7 @@
   "description": "Victor Hugo is a Hugo boilerplate for creating truly epic websites!",
   "main": "index.js",
   "scripts": {
-    "start": "hugo server --disableFastRender -s site -c content "
+    "start": "hugo server --disableFastRender -s site -c content"
   },
   "author": "",
   "license": "MIT",

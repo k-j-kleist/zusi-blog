@@ -1,5 +1,5 @@
 [build]
-  command = "hugo -s site"
+  command = "hugo -s site -c content"
   publish = "public"
 
 # [context.deploy-preview]
