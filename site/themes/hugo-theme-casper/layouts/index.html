@@ -1,6 +1,6 @@
 {{ partial "header.html" . }}
 
-<div class="site-wrapper content-type-{{ .Type }}">
+<div class="site-wrapper content-type-index">
 
 {{if .Site.Params.cover}}
 {{if or (eq (substr .Site.Params.cover 0 7) "http://") (eq (substr .Site.Params.cover 0 8) "https://")}}
@@ -93,7 +93,7 @@
         {{ if isset .Site.Params "paginatedSections" }}
             {{ $.Scratch.Set "paginatedSections" .Site.Params.paginatedSections }}
         {{ else }}
-            {{ $.Scratch.Set "paginatedSections" "post" }}
+            {{ $.Scratch.Set "paginatedSections" "posts" }}
         {{ end }}
     {{ end }}
 

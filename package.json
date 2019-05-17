@@ -4,12 +4,7 @@
   "description": "Victor Hugo is a Hugo boilerplate for creating truly epic websites!",
   "main": "index.js",
   "scripts": {
-    "hugo": "gulp hugo",
-    "webpack": "gulp webpack",
-    "build": "gulp build",
-    "build-preview": "gulp build-preview",
-    "start": "gulp server",
-    "lint": "eslint src"
+    "start": "hugo server --disableFastRender -s site -c content "
   },
   "author": "",
   "license": "MIT",
@@ -29,11 +24,8 @@
     "eslint-plugin-import": "^1.11.1",
     "exports-loader": "^0.6.3",
     "file-loader": "^0.9.0",
-    "gulp": "^3.9.1",
-    "gulp-babel": "^6.1.2",
-    "gulp-postcss": "^6.1.1",
-    "gulp-util": "^3.0.7",
     "imports-loader": "^0.6.5",
+    "postcss-cli": "^6.1.2",
     "postcss-cssnext": "^2.7.0",
     "postcss-import": "^8.1.2",
     "postcss-loader": "^0.9.1",

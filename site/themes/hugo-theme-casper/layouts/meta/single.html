@@ -1,8 +1,8 @@
 {{ partial "header.html" . }}
 {{ $baseurl := .Site.BaseURL }}
 
-<div class="site-wrapper content-type-{{ .Type }}">
-
+<div class="site-wrapper content-type-meta">
+<h1>meta</h1>
 {{if .Params.image}}
   {{if or (eq (substr .Params.image 0 7) "http://") (eq (substr .Params.image 0 8) "https://")}}
   <header class="main-header post-head" style="background-image: url({{.Params.image}})">

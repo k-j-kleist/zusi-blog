@@ -1,0 +1,4 @@
+$(document).ready(function() {
+    var time = moment().tz("Europe/Berlin").format("HH:mm");
+    $("#time").html(time);
+})

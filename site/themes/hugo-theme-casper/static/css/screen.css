@@ -229,7 +229,7 @@ h4, h5, h6 {
     -o-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
     color: #2E2E2E;
     line-height: 1.15em;
-    margin: 0 0 0.4em 0;
+    margin: 0 0 0.3rem 0;
     font-family: "Open Sans", sans-serif;
     text-rendering: geometricPrecision;
 }
@@ -501,7 +501,7 @@ margin on the iframe, cause it breaks stuff. */
             transition: transform 0.5s ease;
 }
 /* kleist */
-.content-type-post {
+.content-type-posts {
     color: var(--color-text-default);
     background-color: var(--color-background);
 }
@@ -999,7 +999,7 @@ body.nav-opened .menu-button .word {
 
 .post-meta {
     display: block;
-    margin: 1.75rem 0 0 0;
+    margin: 0 0 1rem 0;
     font-family: "Open Sans", sans-serif;
     font-size: 1.5rem;
     line-height: 2.2rem;
@@ -1031,11 +1031,12 @@ body.nav-opened .menu-button .word {
 
 .post-date {
     display: inline-block;
+    /* kleist
     margin-left: 8px;
     padding-left: 12px;
-    border-left: #d5dbde 1px solid;
+    border-left: #d5dbde 1px solid; */
     text-transform: uppercase;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     white-space: nowrap;
 }
 
@@ -1498,7 +1499,7 @@ body.nav-opened .menu-button .word {
         font-size: 0.95em
     }
 
-    body:not(.post-template) .post-title {
+    body .post-title {
         font-size: 3.2rem;
     }
 
@@ -1674,14 +1675,6 @@ body.nav-opened .menu-button .word {
         display: none;
     }
 
-    .post-template .post-header {
-        margin-bottom: 2rem;
-    }
-
-    .post-template .post-date {
-        display: inline-block;
-    }
-
     hr {
         margin: 1.75em 0;
     }
@@ -1734,17 +1727,8 @@ body.nav-opened .menu-button .word {
         font-size: 1.8rem;
     }
 
-    body:not(.post-template) .post-title {
+    body .post-title {
         font-size: 2.5rem;
-    }
-
-    .post-template .post {
-        padding-bottom: 0;
-        margin-bottom: 0;
-    }
-
-    .post-template .site-footer {
-        margin-top: 0;
     }
 
     .post-content img {

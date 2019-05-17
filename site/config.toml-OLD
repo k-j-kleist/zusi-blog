@@ -1,0 +1,65 @@
+# These values will populate the .Site variable for use in templates:
+#   https://gohugo.io/variables/site/
+
+# TODO: pass "--baseURL" to hugo in dev mode?
+BaseURL = "/"
+
+# Content without language indicator will default to this language.
+defaultContentLanguage = "sv"
+# mostly used to populate the RSS feeds with the right language code
+LanguageCode = "sv"
+
+Title = "lokomotivo"
+# theme = "hugo-theme-casper"
+theme = "introduction"
+# DisqusShortname = "spf13"
+# Enable Google Analytics by inserting your tracking code
+# GoogleAnalytics = ""
+# Define how many posts should appear on a site
+paginate = 10
+[Language]
+Lang = "sv"
+
+[params]
+# These values will populate the .Site.Params variable for use in templates:
+
+siteDescription = "Virtuella förarhyttsfilmer"
+cover = "images/cover.jpg"
+author = "Karl Johan Kleist"
+authorlocation = "Berlin, Tyskland"
+# authorwebsite = "http://vjeantet.fr"
+# bio= "my bio"
+# logo = "images/logo.png"
+#  googleAnalyticsUserID = "UA-79101-12"
+# Optional RSS-Link, if not provided it defaults to the standard index.xml
+#  RSSLink = "http://feeds.feedburner.com/..."
+# githubName = "vjeantet"
+# twitterName = "vjeantet"
+# facebookName = ""
+# linkedinName = ""
+# set true if you are not proud of using Hugo (true will hide the footer note "Proudly published with HUGO.....")
+hideHUGOSupport = true
+# [params.social]
+# twitter = "your_twitter"
+
+[[menu.main]]
+Weight = 10
+Name = "Hem"
+# Identifier must match the section name
+# Identifier = "home"
+URL = "/"
+
+[[menu.main]]
+Weight = 20
+Name = "Om"
+URL = "/meta/om"
+
+[[menu.main]]
+Weight = 30
+Name = "Problem?"
+URL = "/problem"
+
+[[menu.main]]
+Weight = 40
+Name = "Kontakt"
+URL = "/kontakt"
