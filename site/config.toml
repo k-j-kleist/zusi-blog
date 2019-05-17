@@ -12,7 +12,7 @@ DefaultContentLanguage           = "sv"                    # Default language fo
     fadeInIndex                  = false                   # Turn on/off the fade-in effect on the index page even if fade-in was otherwise turned off
     dateFormat                   = "2006-01-02"
     email                        = "kleist@postkiosk.de"   # E-mail address for contact section
-    customCSS                    = ["lokomotivo.css"]             # Include custom css files placed under assets/
+    customCSS                    = ["lokomotivo.css"]      # Include custom css files placed under assets/
 
     # Configure the home page
     [params.home]
