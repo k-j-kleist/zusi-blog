@@ -81,7 +81,7 @@ DefaultContentLanguage           = "sv"                    # Default language fo
         languageCode     = "sv"
         contentDir       = "content/sv"
         weight           = 0
-        title            = "Inledning"
+        title            = "lokomotivo"
         [languages.sv.params]
             description  = "Beskrivning av webbplatsen"   # Max 160 characters show in search results
             footerText   = "Made with love in Berlin"                      # Text to override default footer text (markdown allowed)
