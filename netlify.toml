@@ -8,4 +8,4 @@
 # [context.deploy-preview.environment]
 [context.production.environment]
   # as printed by the local command "hugo version"
-  HUGO_VERSION = "0.55.1"
+  HUGO_VERSION = "0.55.6"

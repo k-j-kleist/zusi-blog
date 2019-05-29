@@ -1,0 +1,14 @@
+{{/* kleist */}}
+{{ if .Site.Params.home.showLatest | default true }}
+    {{ range after 1 .Pages.ByPublishDate.Reverse}}
+        <li class="post-item">
+            <span><a href="{{ .Permalink }}">{{ .Title }}</a></span>{{ if .Params.date }} - <span>{{ .Date.Format (.Site.Params.dateFormat | default "Jan 02, 2006") }}</span>{{ end }}
+        </li>
+    {{ end }}
+{{ else }}
+    {{ range .Pages.ByPublishDate.Reverse}}
+        <li class="post-item">
+            <span><a href="{{ .Permalink }}">{{ .Title }}</a></span>{{ if .Params.date }} - <span>{{ .Date.Format (.Site.Params.dateFormat | default "Jan 02, 2006") }}</span>{{ end }}
+        </li>
+    {{ end }}
+{{ end }}

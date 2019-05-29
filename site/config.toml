@@ -1,5 +1,7 @@
 baseURL                          = "/"                      # Your domain name. Must end with "/"
-theme                            = "introduction"
+
+# https://github.com/gohugoio/hugo/pull/4467
+theme                            = ["introduction-local", "introduction"]
 DefaultContentLanguage           = "sv"                    # Default language for multilingual sites
 # disqusshortname                 = ""                       # https://gohugo.io/content-management/comments
 # googleAnalytics                 = ""                       # https://gohugo.io/templates/internal/#google-analytics
