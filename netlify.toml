@@ -1,6 +1,6 @@
 [build]
   command = "hugo -s site -c content"
-  publish = "public"
+  publish = "site/public"
 
 # [context.deploy-preview]
 #   command = "npm run build-preview"
